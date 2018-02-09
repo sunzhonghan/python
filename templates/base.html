@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+            {% block title %}  基础模板   {% endblock %}
+     </title>
+
+</head>
+<body>
+    <h1>我是基础模板！我最牛逼！谁都不能修改我！</h1>
+    {% block body %}
+        这里是body的继承！
+    {% endblock %}
+</body>
+</html>

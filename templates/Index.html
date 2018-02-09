@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title  }}
+{% endblock %}
+
+{% block body %}
+    <h2>动态分离的继承！就是牛逼</h2>
+
+    {% for i in sub %}
+        <h3>{{ i }}</h3>
+    {% endfor %}
+
+
+    {% for x,y in dict.items %}
+        <h4>{{ x }}:{{ y }}</h4>
+    {% endfor %}
+
+    {% for l in list %}
+        {{ l }} {% if not forloop.last %}, {% endif %}
+    {% endfor %}
+
+
+{% endblock %}
+
+
+
